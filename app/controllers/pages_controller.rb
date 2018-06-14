@@ -14,12 +14,12 @@ class PagesController < ApplicationController
     @header = "This is another test"
     # render :contest
     flash[:notice] = "Sorry, the contest has ended"
-    redirect_to "/welcome"
+    redirect_to root_url
   end
 
   def contest1
     @header = "this is a secondary test"
-    render :contest
+    render contest_url
   end
 
   def kitten
@@ -37,10 +37,10 @@ class PagesController < ApplicationController
 
   def secrets
     if params[:magic_word] == "blue"
-      render :secrets
+      # render :secrets
     else
       flash[:alert] = "Sorry, you're not authorized to see that page!"
-      render :welcome
+      redirect_to root_url
     end
   end
 

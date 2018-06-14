@@ -1,2 +1,8 @@
 <h2>This is the welcome page</h2>
 <!-- <h1> <%= @header %> </h1> -->
+<p><%= link_to("100px kitten", kitten_url(100)) %> </p>
+<p><%= link_to("200px kitten", kitten_url(200)) %> </p>
+<p><%= link_to("300px kitten", kitten_url(300)) %> </p>
+<p><%= link_to("400px kitten", kitten_url(400)) %> </p>
+<p><%= link_to("secrets page", secrets_url('blue')) %> </p>
+<p><%= link_to("incorrect secrets page", secrets_url(0000)) %> </p>
