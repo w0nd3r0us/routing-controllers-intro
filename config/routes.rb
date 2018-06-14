@@ -9,4 +9,8 @@ Rails.application.routes.draw do
 
   get '/contest' => 'pages#contest'
 
+# get '/application' => 'layouts#application'
+
+  get '/contest1' => 'pages#contest1'
+
 end
