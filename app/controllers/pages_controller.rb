@@ -14,12 +14,12 @@ class PagesController < ApplicationController
     @header = "This is another test"
     # render :contest
     flash[:notice] = "Sorry, the contest has ended"
-    redirect_to root_url
+    redirect_to root_path
   end
 
   def contest1
     @header = "this is a secondary test"
-    render contest_url
+    render :contest
   end
 
   def kitten
